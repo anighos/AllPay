@@ -82,6 +82,7 @@ header{
     box-shadow: 0 0 30px rgba(0,0,0,.5);
     overflow: hidden;
     transform: scale(0);
+    /*display: none;*/
    transition: transform .5s ease , height .2s ease;
 }
 .wrap.active-popup{
@@ -228,6 +229,43 @@ header{
     text-decoration: underline;
 
 }
+.iconclose{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: #162938;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 18px;
+    cursor: pointer;
+}
 footer a:hover{
     color: red;
+
+}
+footer {
+    text-align: center;
+    padding: 2%;
+    margin-bottom: 5px;
+    background-color: #162938;
+    text-decoration: none;
+    height: 100px;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+.bold{
+    text-decoration: none;
+    color: white;
+}
+.gap{
+    height: 100px;
 }

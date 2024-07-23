@@ -1,7 +1,8 @@
 const wrap = document.querySelector('.wrap');
 const loginlink = document.querySelector('.login-link');
 const registerlink = document.querySelector('.register-link');
-const btnPopup = document.querySelector('.btnLogin-popup');
+const btnPopup = document.querySelector('.login');
+const iconClose = document.querySelector('.iconclose');
 registerlink.addEventListener('click', ()=>{
     wrap.classList.add('active');
 });
@@ -9,9 +10,9 @@ registerlink.addEventListener('click', ()=>{
 loginlink.addEventListener('click', ()=>{
     wrap.classList.remove('active');
 });
-/*btnPopup.addEventListener('click', ()=>{
+btnPopup.addEventListener('click', ()=>{
     wrap.classList.add('active-popup');
-});*/
-document.getElementById("button").addEventListener("click",function(){
-    document.querySelector(".wrap").computedStyleMap.display ="flex";
-})
+});
+iconClose.addEventListener('click', ()=>{
+    wrap.classList.remove('active-popup');
+});
